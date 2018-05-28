@@ -1,0 +1,6 @@
+<div>
+    <h1>Projekter</h1>
+    {{ range where .Data.Pages "Type" "projects" }}
+    {{ partial "summary.html" . }}
+    {{ end }}
+</div>

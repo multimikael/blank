@@ -1,10 +1,8 @@
 {{ partial "header.html" . }}
+<a href="old/">Gamle Studieweb</a>
 <main>
-    {{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
-    {{ range $paginator.Pages }}
-    {{ partial "summary.html" . }}
-    {{ end }}
-    {{ partial "pagination.html" . }}
+    {{ partial "about.html" . }}
+    {{ partial "posts.html" . }}
 </main>
-{{ partial "sidebar.html" . }}
+<hr>
 {{ partial "footer.html" . }}

@@ -1,0 +1,7 @@
+<div>
+    {{ with .Site.GetPage "page" "about" }}
+    
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{end}}
+</div>
